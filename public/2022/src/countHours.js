@@ -1,9 +1,7 @@
 export const countHours = (year, holidays) => {
   let extraHours = 0
   holidays.map(day => {
-    if (new Date(year.toString() + '/' + day).getDay() % 6) {
-      extraHours += 2
-    }
+    return new Date(year + '/' + day).getDay() % 6 ? extraHours += 2 : 0
   })
   return extraHours
 }
