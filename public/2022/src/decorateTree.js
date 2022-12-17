@@ -1,4 +1,4 @@
-const decorateTree = (base) => {
+export const decorateTree = (base) => {
   const treeBase = base.split(' ')
   const decoracion = {
     BB: 'B',
